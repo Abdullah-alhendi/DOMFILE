@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login & Profile Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="registration">
+        <h2>Registration</h2>
+        <input type="text" id="regUsername" placeholder="Username">
+        <input type="password" id="regPassword" placeholder="Password">
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div id="login" style="display:none;">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button id="loginBtn" onclick="loginUser()" disabled>Login</button>
+    </div>
+
+    <div id="profile" style="display:none;">
+        <h2>Profile</h2>
+        <p id="userInfo"></p>
+        <button onclick="showEditProfile()">Edit Profile</button>
+        <button onclick="logoutUser()">Logout</button>
+
+        <div id="editProfile" style="display:none;">
+            <input type="text" id="editUsername" placeholder="New Username">
+            <input type="password" id="editPassword" placeholder="New Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <button id="saveChangesBtn" onclick="saveChanges()" disabled>Save Changes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

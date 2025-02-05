@@ -1,0 +1,30 @@
+
+        .frame {
+            border: 2px solid #000;
+            padding: 80px;
+            width: 350px;
+            margin: auto;
+            display: flex;
+            box-shadow: 2px 2px 13px rgba(0,0,0,0.1);
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            width: calc(100% - 130px);
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+        button {
+            margin-top: 10px;
+            align-self: flex-start;
+        }
